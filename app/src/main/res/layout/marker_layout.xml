@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 外层LinearLayout加背景、圆角、阴影，把图片+名字框起来 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/spinner_bg"
+    android:padding="6dp">
+
+    <!-- 商品图片 -->
+    <ImageView
+    android:id="@+id/iv_marker_icon"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:scaleType="centerCrop"/>
+
+    <!-- 商品名称 -->
+    <TextView
+    android:id="@+id/tv_marker_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:textSize="10sp"
+    android:textColor="@color/black"
+    android:maxLines="1"
+    android:ellipsize="end"/>
+
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- 存储权限（适配多版本） -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" /> <!-- 图片（API 33+） -->
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" /> <!-- 音频（API 33+） -->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 多媒体权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 录音 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 相机 -->
+    <!-- 声明相机硬件非必需（解决适配提醒） -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+
+    <!-- 基础定位权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/><!-- 网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/><!-- GPS定位 -->
+    <!-- 网络权限（用于获取网络定位） -->
+    <uses-permission android:name="android.permission.INTERNET"/><!-- 定位数据请求 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/><!-- 网络状态判断 -->
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Finalwork"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup,android:theme,android:label,android:icon"
+        tools:targetApi="33">
+
+        <!-- 闪屏页（启动页） -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 登录页（非启动页） -->
+        <activity android:name=".activity.LoginActivity"/>
+
+    <!-- 登录页（启动页） -->
+<!--    <activity-->
+<!--        android:name=".activity.LoginActivity"-->
+<!--        android:exported="true">-->
+<!--        <intent-filter>-->
+<!--            <action android:name="android.intent.action.MAIN" />-->
+<!--            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--        </intent-filter>-->
+<!--    </activity>-->
+
+    <!-- 其他页面（exported="true" 可按需移除，仅启动页必需） -->
+    <activity android:name=".activity.RegisterActivity" android:exported="false" />
+    <activity android:name=".activity.MainActivity" android:exported="false" />
+    <activity android:name=".activity.PublishGoodsActivity" android:exported="false" />
+    <activity android:name=".activity.GoodsDetailActivity" android:exported="false" />
+    <activity android:name=".activity.CollectActivity" android:exported="false" />
+    <activity android:name=".activity.EditGoodsActivity" android:exported="false" />
+    <activity android:name=".activity.MyGoodsActivity" android:exported="false" />
+    <activity android:name=".activity.ChatListActivity" android:exported="false" />
+    <activity android:name=".activity.ChatDetailActivity" android:exported="false" />
+    <activity android:name=".activity.SettingActivity" android:exported="false" />
+    <activity android:name=".activity.UserHomeActivity" android:exported="false" />
+    <activity android:name=".activity.MapPickLocationActivity" android:exported="false" />
+    <activity android:name=".activity.MyPublishedActivity" android:exported="false" />
+    <activity android:name=".activity.SearchResultActivity" android:exported="false" />
+    <activity android:name=".activity.SelectCityActivity" android:exported="false" />
+    <activity android:name=".activity.CreateExchangeOrderActivity" android:exported="false" />
+    <activity android:name=".activity.ExchangeRecordActivity" android:exported="false" />
+    <activity android:name=".activity.ExchangeRecordDetailActivity" android:exported="false" />
+    <activity android:name=".activity.ChatExchangeRecordActivity" android:exported="false" />
+    <activity android:name=".activity.ImagePreviewActivity"
+        android:exported="false"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    <!-- 附近物品地图页 -->
+    <activity android:name=".activity.NearbyGoodsMapActivity"
+        android:exported="false" />
+
+        <!-- 百度地图SDK的AK -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Us1JQkaYarlnB5FHPhcn4ANo8XsKNdfd"/>
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=""
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

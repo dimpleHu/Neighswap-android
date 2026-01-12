@@ -1,0 +1,69 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+
+        //TUIKit相关仓库
+        gradlePluginPortal()
+        maven { url "https://mirrors.tencent.com/nexus/repository/maven-public" }
+        maven { url "https://developer.huawei.com/repo" }
+        maven { url "https://developer.hihonor.com/repo" }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        // 腾讯云IM SDK仓库
+        maven { url "https://mirrors.tencent.com/nexus/repository/maven-public/" }
+        maven { url "https://mirrors.cloud.tencent.com/nexus/repository/maven-public/" }
+        // 优先用阿里云镜像
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+
+        google()
+        mavenCentral()
+
+        //TUIKit相关仓库
+        maven { url "https://mirrors.tencent.com/repository/maven/liteavsdk/" }
+        maven { url "https://developer.huawei.com/repo/" }
+        maven { url "https://developer.hihonor.com/repo" }
+
+
+        // JitPack仓库（备用）
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+rootProject.name = "finalwork"
+
+// 引入上层应用模块
+include ':app'
+
+// 引入内部组件通信模块 (必要模块)
+include ':tuicore'
+project(':tuicore').projectDir = new File(settingsDir, 'TUIKit/TUICore/tuicore')
+
+// 引入 IM 组件公共模块（必要模块）
+include ':timcommon'
+project(':timcommon').projectDir = new File(settingsDir, 'TUIKit/TIMCommon/timcommon')
+
+// 引入聊天功能模块 (基础功能模块)
+include ':tuichat'
+project(':tuichat').projectDir = new File(settingsDir, 'TUIKit/TUIChat/tuichat')
+
+// 引入关系链功能模块 (基础功能模块)
+include ':tuicontact'
+project(':tuicontact').projectDir = new File(settingsDir, 'TUIKit/TUIContact/tuicontact')
+
+// 引入会话功能模块 (基础功能模块)
+include ':tuiconversation'
+project(':tuiconversation').projectDir = new File(settingsDir, 'TUIKit/TUIConversation/tuiconversation')

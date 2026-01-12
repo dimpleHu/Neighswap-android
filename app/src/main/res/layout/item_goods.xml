@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="15dp"
+    android:background="@drawable/shape_item_bg"
+    android:layout_marginBottom="10dp">
+
+    <!-- 商品默认图标 -->
+    <ImageView
+        android:id="@+id/iv_goods_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="centerCrop"/>
+
+    <!-- 商品信息（名称、描述、价格） -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品名称"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_goods_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这是商品的简要描述..."
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/grey"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥99.00"
+            android:textColor="@color/red"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_goods_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

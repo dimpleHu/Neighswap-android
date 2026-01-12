@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_700"
+        android:title="消息"
+        android:titleTextColor="@color/white"/>
+
+    <!-- 对话列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"/>
+
+    <!-- 空数据提示（默认隐藏） -->
+    <TextView
+        android:id="@+id/tv_empty_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="暂无对话"
+        android:textSize="18sp"
+        android:textColor="@color/grey"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+</LinearLayout>
+

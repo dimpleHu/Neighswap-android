@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- 矩形背景色（可根据你的UI调整，比如浅灰色） -->
+    <solid android:color="#F5F5F5" />
+    <!-- 边框颜色和宽度 -->
+    <stroke
+        android:width="1dp"
+        android:color="#E0E0E0" />
+    <!-- 圆角（可选，让矩形边角更圆润） -->
+    <corners android:radius="4dp" />
+    <!-- 内边距（让文字和箭头不贴边框） -->
+    <padding
+        android:left="8dp"
+        android:top="4dp"
+        android:right="8dp"
+        android:bottom="4dp" />
+</shape>

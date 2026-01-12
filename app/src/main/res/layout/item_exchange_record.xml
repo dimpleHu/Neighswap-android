@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <!-- 状态：右上角 -->
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="待确认"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700" />
+
+    <!-- 物品名称 -->
+    <TextView
+        android:id="@+id/tv_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/tv_status"
+        android:text="物品：A ⇄ B"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <!-- 用户名称 -->
+    <TextView
+        android:id="@+id/tv_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_items"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/tv_status"
+        android:layout_marginTop="4dp"
+        android:text="用户：U1 ⇄ U2"
+        android:textSize="14sp"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <!-- 时间 -->
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_users"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:text="时间：2024-01-01 12:00"
+        android:textSize="12sp"
+        android:textColor="@color/grey" />
+
+    <!-- 详情按钮：右下角 -->
+    <TextView
+        android:id="@+id/btn_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/tv_status"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
+        android:text="详情"
+        android:textColor="@color/white"
+        android:background="@color/teal_700"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_time"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_light" />
+
+</RelativeLayout>
+
+

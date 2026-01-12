@@ -1,0 +1,168 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:2:1-99:12
+INJECTED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:2:1-99:12
+	package
+		INJECTED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:4:5-5:38
+	android:maxSdkVersion
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:5:9-35
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:4:22-78
+uses-permission#android.permission.CAMERA
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:7:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:8:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:9:22-77
+application
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:11:5-97:19
+activity#com.tencent.qcloud.tuikit.tuichat.component.imagevideobrowse.ImageVideoBrowseActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:12:9-15:77
+	android:launchMode
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:14:13-44
+	android:configChanges
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:15:13-74
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:13:13-113
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.FriendProfileActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:17:9-19:52
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:19:13-49
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:18:13-98
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.MessageReplyDetailActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:21:9-24:52
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:24:13-49
+	android:windowSoftInputMode
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:23:13-67
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:22:13-103
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.TUIForwardChatActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:25:9-27:52
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:27:13-49
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:26:13-99
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.TUIC2CChatActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:28:9-32:71
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:31:13-49
+	android:launchMode
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:30:13-44
+	android:windowSoftInputMode
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:32:13-68
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:29:13-95
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.TUIGroupChatActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:35:9-39:70
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:38:13-49
+	android:launchMode
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:37:13-44
+	android:windowSoftInputMode
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:39:13-68
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:36:13-97
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.MessageReceiptDetailActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:41:9-43:52
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:43:13-49
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:42:13-105
+activity#com.tencent.qcloud.tuikit.tuichat.component.camera.CameraActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:44:9-46:52
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:46:13-49
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:45:13-93
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.GroupInfoActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:48:9-49:52
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:49:13-49
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:48:19-100
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.GroupNoticeActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:50:9-51:52
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:51:13-49
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:50:19-102
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.widget.messagepopmenu.ChatPopActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:59:9-63:71
+	android:launchMode
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:62:13-44
+	android:windowSoftInputMode
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:63:13-68
+	android:theme
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:61:13-67
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:60:13-112
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.page.TUIC2CChatMinimalistActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:65:9-69:71
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:68:13-49
+	android:launchMode
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:67:13-44
+	android:windowSoftInputMode
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:69:13-68
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:66:13-108
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.page.TUIGroupChatMinimalistActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:71:9-75:71
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:74:13-49
+	android:launchMode
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:73:13-44
+	android:windowSoftInputMode
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:75:13-68
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:72:13-110
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.page.MessageDetailMinimalistActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:77:9-79:52
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:79:13-49
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:78:13-111
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.page.TUIForwardChatMinimalistActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:81:9-83:52
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:83:13-49
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:82:13-112
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.page.GroupInfoMinimalistActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:85:9-86:52
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:86:13-49
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:85:19-113
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.page.FriendProfileMinimalistActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:89:9-91:52
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:91:13-49
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:90:13-111
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.page.GroupNoticeMinimalistActivity
+ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:93:9-94:52
+	android:screenOrientation
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:94:13-49
+	android:name
+		ADDED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml:93:19-115
+uses-sdk
+INJECTED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml
+INJECTED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIChat/tuichat/src/main/AndroidManifest.xml

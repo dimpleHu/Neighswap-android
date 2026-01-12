@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部Toolbar（保留） -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_detail"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_700"
+        app:title="商品详情"
+        app:navigationIcon="@drawable/ic_back"
+        app:titleTextColor="@color/white"/>
+
+    <!-- ScrollView 核心规则：仅包裹一个直接子控件（这里是 LinearLayout） -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp">
+
+        <!-- ScrollView 的唯一直接子控件：外层 LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 图片轮播区域 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/vp_pic_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tl_indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    app:tabIndicatorColor="@color/teal_700"
+                    app:tabSelectedTextColor="@color/teal_700"
+                    app:tabTextColor="@color/grey"
+                    app:tabMode="fixed"
+                    app:tabGravity="center"/>
+            </LinearLayout>
+
+            <!-- 名称+价格同行区域 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tv_detail_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="商品名称"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥99.00"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <!-- 商品描述 -->
+            <TextView
+                android:id="@+id/tv_detail_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="这是商品的详细描述..."
+                android:textSize="16sp"
+                android:lineSpacingExtra="5dp" />
+
+            <!-- 发布者信息 -->
+            <LinearLayout
+                android:id="@+id/ll_publisher_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp"
+                android:clickable="true"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_publisher_avatar"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_avatar"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/shape_circle"/>
+
+                <TextView
+                    android:id="@+id/tv_publisher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="卖家名称"
+                    android:textColor="@color/teal_700"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <!-- 分类+时间 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/tv_detail_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分类：数码"
+                    android:textColor="@color/grey"
+                    android:layout_marginRight="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2024-05-01"
+                    android:textColor="@color/grey"/>
+            </LinearLayout>
+
+            <!-- 点击量+收藏量 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tv_detail_click_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点击量：0"
+                    android:textColor="@color/grey"
+                    android:layout_marginRight="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_collect_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收藏量：0"
+                    android:textColor="@color/grey"/>
+            </LinearLayout>
+
+            <!-- 发布位置 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发布位置："
+                    android:textStyle="bold"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_detail_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="未知"
+                    android:textColor="@color/grey"
+                    android:paddingStart="4dp"/>
+            </LinearLayout>
+
+            <!-- 底部按钮 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:spacing="30dp">
+
+                <Button
+                    android:id="@+id/btn_contact_seller"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/teal_700"
+                    android:padding="15dp"
+                    android:text="联系卖家"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btn_collect"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="收藏"
+                    android:background="@color/teal_700"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:padding="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- ScrollView 的唯一直接子控件结束 -->
+    </ScrollView>
+</LinearLayout>

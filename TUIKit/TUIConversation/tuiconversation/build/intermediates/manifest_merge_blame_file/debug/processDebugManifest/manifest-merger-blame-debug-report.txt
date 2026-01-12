@@ -1,0 +1,45 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.qcloud.tuikit.tuiconversation" >
+4
+5    <uses-sdk android:minSdkVersion="19" />
+6
+7    <application>
+7-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:4:5-31:19
+8
+9        <!-- **************** Classic UI Activity Start **************** -->
+10        <activity
+10-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:7:9-9:52
+11            android:name="com.tencent.qcloud.tuikit.tuiconversation.classicui.page.TUIForwardSelectActivity"
+11-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:8:13-109
+12            android:screenOrientation="portrait" />
+12-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:9:13-49
+13        <activity
+13-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:11:9-13:52
+14            android:name="com.tencent.qcloud.tuikit.tuiconversation.classicui.page.TUIFoldedConversationActivity"
+14-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:12:13-114
+15            android:screenOrientation="portrait" />
+15-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:13:13-49
+16        <!-- **************** Classic UI Activity End **************** -->
+17
+18
+19        <!-- **************** Minimalist UI Activity Start **************** -->
+20        <activity
+20-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:21:9-24:52
+21            android:name="com.tencent.qcloud.tuikit.tuiconversation.minimalistui.page.TUIForwardSelectMinimalistActivity"
+21-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:22:13-122
+22            android:screenOrientation="portrait"
+22-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:24:13-49
+23            android:theme="@style/ConversationTransparentPopActivityStyle" />
+23-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:23:13-75
+24        <activity
+24-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:26:9-28:52
+25            android:name="com.tencent.qcloud.tuikit.tuiconversation.minimalistui.page.TUIFoldedConversationMinimalistActivity"
+25-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:27:13-127
+26            android:screenOrientation="portrait" />
+26-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIConversation/tuiconversation/src/main/AndroidManifest.xml:28:13-49
+27        <!-- **************** Minimalist UI Activity End **************** -->
+28
+29    </application>
+30
+31</manifest>

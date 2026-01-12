@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 外层用FrameLayout，让FAB可以悬浮在所有控件上方 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_purple">
+
+    <!-- 原有内容（分类标签+列表）放在LinearLayout中 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- 分类标签（HorizontalScrollView） -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <!-- 全部 -->
+                <TextView
+                    android:id="@+id/tv_category_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="全部"
+                    android:padding="15dp"
+                    android:background="@color/teal_700"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:radius="20dp"/>
+
+                <!-- 数码 -->
+                <TextView
+                    android:id="@+id/tv_category_digital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="数码"
+                    android:padding="15dp"
+                    android:background="@color/grey_light"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:radius="20dp"/>
+
+                <!-- 书籍 -->
+                <TextView
+                    android:id="@+id/tv_category_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="书籍"
+                    android:padding="15dp"
+                    android:background="@color/grey_light"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:radius="20dp"/>
+
+                <!-- 家具 -->
+                <TextView
+                    android:id="@+id/tv_category_furniture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家具"
+                    android:padding="15dp"
+                    android:background="@color/grey_light"
+                    android:textColor="@color/black"
+                    android:layout_marginRight="10dp"
+                    android:radius="20dp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- 物品列表 -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_goods"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <!-- 悬浮按钮（放在FrameLayout中，独立于LinearLayout，实现悬浮） -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</FrameLayout>

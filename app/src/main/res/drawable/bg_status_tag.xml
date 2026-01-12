@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/orange_ff9800" /> <!-- 默认待确认橙色 -->
+    <corners android:radius="12dp" /> <!-- 圆角标签 -->
+</shape>

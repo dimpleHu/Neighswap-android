@@ -1,0 +1,50 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.qcloud.tuicore" >
+4
+5    <uses-sdk android:minSdkVersion="19" />
+6
+7    <application>
+7-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:4:5-27:19
+8        <activity
+8-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:5:9-10:75
+9            android:name="com.tencent.qcloud.tuicore.permission.PermissionActivity"
+9-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:6:13-84
+10            android:configChanges="orientation|keyboardHidden|screenSize"
+10-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:7:13-74
+11            android:launchMode="singleTask"
+11-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:8:13-44
+12            android:theme="@style/CoreActivityTranslucent"
+12-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:9:13-59
+13            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+13-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:10:13-72
+14        <activity
+14-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:12:9-18:75
+15            android:name="com.tencent.qcloud.tuicore.util.PermissionRequester$PermissionActivity"
+15-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:13:13-98
+16            android:configChanges="orientation|keyboardHidden|screenSize"
+16-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:14:13-74
+17            android:launchMode="singleTask"
+17-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:16:13-44
+18            android:multiprocess="true"
+18-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:15:13-40
+19            android:theme="@style/CoreActivityTranslucent"
+19-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:17:13-59
+20            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+20-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:18:13-72
+21
+22        <provider
+22-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:20:9-25:39
+23            android:name="com.tencent.qcloud.tuicore.ServiceInitializer"
+23-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:21:13-73
+24            android:authorities="${applicationId}.TUICore.Init"
+24-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:22:13-64
+25            android:enabled="true"
+25-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:24:13-35
+26            android:exported="false"
+26-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:25:13-37
+27            android:initOrder="99999" />
+27-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUICore/tuicore/src/main/AndroidManifest.xml:23:13-38
+28    </application>
+29
+30</manifest>

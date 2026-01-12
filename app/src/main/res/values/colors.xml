@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="teal_700">#F700897B</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="grey_light">#F5F5F5</color>
+    <color name="red">#F44336</color>
+    <color name="orange">#FF9800</color>
+    <color name="purple">#673AB7</color>
+    <color name="blue">#2196F3</color>
+    <color name="green">#4CAF50</color>
+
+    <!-- 状态文字背景 -->
+    <color name="status_pending">#FF9800</color>
+    <color name="status_exchanging">#2196F3</color>
+    <color name="status_exchanged">#4CAF50</color>
+    <color name="status_offline">#9E9E9E</color>
+
+    <!-- 基础颜色 -->
+    <color name="gray_f5f5f5">#F5F5F5</color>
+    <color name="black_333333">#333333</color>
+    <color name="black_666666">#666666</color>
+    <color name="black_999999">#999999</color>
+    <color name="orange_ff9800">#FF9800</color>
+    <color name="green_4CAF50">#4CAF50</color>
+    <color name="red_f44336">#F44336</color>
+
+    <!-- 主页/发现页淡紫色背景（与聊天列表风格接近） -->
+    <color name="home_bg_purple">#FEF7FF</color>
+</resources>

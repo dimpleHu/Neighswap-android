@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 外层用FrameLayout，让FAB可以悬浮在所有控件上方 -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_bg_purple">
+
+    <!-- 原有内容放在LinearLayout中 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <!-- 顶部Toolbar风格的搜索栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_700"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:elevation="4dp">
+
+        <!-- 位置信息 -->
+        <LinearLayout
+            android:id="@+id/layout_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="12dp">
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_location"
+                android:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="未知"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- 搜索框 -->
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:hint="搜索物品/用户"
+            android:background="@drawable/shape_search"
+            android:padding="8dp"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <!-- 搜索图标按钮 -->
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_search"
+            android:layout_marginStart="8dp"
+            android:padding="8dp"
+            android:tint="@color/white"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+
+    <!-- 切换标题栏（热门/附近） -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:background="@color/home_bg_purple">
+
+        <TextView
+            android:id="@+id/tv_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="热门物品推荐"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingRight="20dp"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/tv_nearby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="附近物品推荐"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true"/>
+    </LinearLayout>
+
+    <!-- 附近筛选分类标签：只在"附近物品推荐"选中时显示 -->
+    <HorizontalScrollView
+        android:id="@+id/layout_nearby_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!-- 全部 -->
+            <TextView
+                android:id="@+id/tv_filter_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"
+                android:padding="15dp"
+                android:background="@color/teal_700"
+                android:textColor="@color/white"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <!-- 附近100米 -->
+            <TextView
+                android:id="@+id/tv_filter_100m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附近100米"
+                android:padding="15dp"
+                android:background="@color/grey_light"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <!-- 附近1000米 -->
+            <TextView
+                android:id="@+id/tv_filter_1000m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="附近1000米"
+                android:padding="15dp"
+                android:background="@color/grey_light"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <!-- 本市 -->
+            <TextView
+                android:id="@+id/tv_filter_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本市"
+                android:padding="15dp"
+                android:background="@color/grey_light"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <!-- 本省 -->
+            <TextView
+                android:id="@+id/tv_filter_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本省"
+                android:padding="15dp"
+                android:background="@color/grey_light"
+                android:textColor="@color/black"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+        <!-- 物品列表（共用一个RecyclerView，切换数据源） -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_goods_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <!-- 悬浮按钮（放在FrameLayout中，独立于LinearLayout，实现悬浮） -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_mylocation"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:tint="@color/black"/>
+
+</FrameLayout>

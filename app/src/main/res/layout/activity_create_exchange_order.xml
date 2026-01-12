@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部 Toolbar，样式参考商品详情页 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_exchange_order"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_700"
+        app:title="创建交换订单"
+        app:navigationIcon="@drawable/ic_back"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 用户1 信息 - 横向布局（标签+名字） -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tv_user1_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户1："
+                    android:textSize="14sp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_user1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前登录用户"
+                    android:textSize="18sp"
+                android:layout_marginLeft="4dp" />
+            </LinearLayout>
+
+            <!-- 用户1物品 - 横向布局（文字+小按钮） -->
+            <TextView
+                android:id="@+id/tv_user1_goods_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户1的物品"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_user1_goods"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="请选择物品"
+                    android:textColor="@color/grey" />
+
+                <Button
+                    android:id="@+id/btn_select_user1_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:text="选择"
+                android:textSize="12sp"
+                android:background="@color/teal_700"
+                android:textColor="@color/white"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="0dp" />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/grey_light" />
+
+            <!-- 用户2 信息 - 横向布局（标签+名字） -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tv_user2_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户2："
+                    android:textSize="14sp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_user2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="对方用户"
+                    android:textSize="18sp"
+                android:layout_marginLeft="4dp" />
+            </LinearLayout>
+
+            <!-- 用户2物品 - 横向布局（文字+小按钮） -->
+            <TextView
+                android:id="@+id/tv_user2_goods_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户2的物品"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_user2_goods"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="请选择物品"
+                    android:textColor="@color/grey" />
+
+                <Button
+                    android:id="@+id/btn_select_user2_goods"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:text="选择"
+                android:textSize="12sp"
+                android:background="@color/teal_700"
+                android:textColor="@color/white"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="0dp" />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@color/grey_light" />
+
+            <!-- 交换时间 - 横向布局（文字+小按钮） -->
+            <TextView
+                android:id="@+id/tv_exchange_time_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交换时间"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_exchange_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="请选择交换时间"
+                    android:textColor="@color/grey" />
+
+                <Button
+                    android:id="@+id/btn_select_exchange_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:text="选择"
+                android:textSize="12sp"
+                android:background="@color/teal_700"
+                android:textColor="@color/white"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="0dp" />
+            </LinearLayout>
+
+            <!-- 交换地点 -->
+            <TextView
+                android:id="@+id/tv_exchange_place_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="交换地点"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="4dp">
+
+                <EditText
+                    android:id="@+id/et_exchange_place"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="请输入线下地址或收件地址"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:inputType="textMultiLine"
+                    android:minLines="2" />
+
+                <Button
+                    android:id="@+id/btn_pick_exchange_place"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="地图选择"
+                    android:textSize="12sp"
+                    android:background="@color/teal_700"
+                    android:textColor="@color/white"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="0dp" />
+            </LinearLayout>
+
+            <!-- 备注 -->
+            <TextView
+                android:id="@+id/tv_remark_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="备注"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="可填写物品细节、特殊约定等"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:inputType="textMultiLine"
+                android:minLines="2" />
+
+            <!-- 确认按钮 -->
+            <Button
+                android:id="@+id/btn_confirm_exchange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="确认创建交换订单"
+                android:background="@color/teal_700"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:padding="12dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

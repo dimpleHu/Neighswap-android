@@ -1,0 +1,230 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.qcloud.tuikit.tuicontact" >
+4
+5    <uses-sdk android:minSdkVersion="19" />
+6
+7    <application>
+7-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:4:5-130:19
+8
+9        <!-- **************** Classic UI Activity Start **************** -->
+10        <activity
+10-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:6:9-8:52
+11            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.AddMoreActivity"
+11-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:7:13-96
+12            android:screenOrientation="portrait" />
+12-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:8:13-49
+13        <activity
+13-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:9:9-12:73
+14            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.AddMoreDetailActivity"
+14-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:10:13-66
+15            android:screenOrientation="portrait"
+15-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:11:13-49
+16            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+16-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:12:13-70
+17        <activity
+17-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:14:9-16:52
+18            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.NewFriendActivity"
+18-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:15:13-98
+19            android:screenOrientation="portrait" />
+19-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:16:13-49
+20        <activity
+20-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:17:9-19:52
+21            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.BlackListActivity"
+21-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:18:13-98
+22            android:screenOrientation="portrait" />
+22-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:19:13-49
+23        <activity
+23-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:20:9-22:52
+24            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.GroupListActivity"
+24-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:21:13-98
+25            android:screenOrientation="portrait" />
+25-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:22:13-49
+26        <activity
+26-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:24:9-26:52
+27            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.StartC2CChatActivity"
+27-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:25:13-101
+28            android:screenOrientation="portrait" />
+28-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:26:13-49
+29        <activity
+29-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:27:9-30:73
+30            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.StartGroupChatActivity"
+30-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:28:13-103
+31            android:screenOrientation="portrait"
+31-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:29:13-49
+32            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+32-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:30:13-70
+33        <activity
+33-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:32:9-35:52
+34            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.ForwardSelectGroupActivity"
+34-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:33:13-107
+35            android:launchMode="singleInstance"
+35-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:34:13-48
+36            android:screenOrientation="portrait" />
+36-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:35:13-49
+37        <activity
+37-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:36:9-39:52
+38            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.StartGroupMemberSelectActivity"
+38-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:37:13-111
+39            android:launchMode="singleInstance"
+39-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:38:13-48
+40            android:screenOrientation="portrait" />
+40-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:39:13-49
+41        <activity
+41-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:41:9-43:52
+42            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.CreateGroupActivity"
+42-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:42:13-100
+43            android:screenOrientation="portrait" />
+43-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:43:13-49
+44        <activity
+44-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:45:9-47:52
+45            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.GroupTypeSelectActivity"
+45-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:46:13-104
+46            android:screenOrientation="portrait" />
+46-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:47:13-49
+47        <activity
+47-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:49:9-51:52
+48            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.SetGroupManagerActivity"
+48-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:50:13-104
+49            android:screenOrientation="portrait" />
+49-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:51:13-49
+50        <activity
+50-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:52:9-54:52
+51            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.GroupMemberActivity"
+51-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:53:13-100
+52            android:screenOrientation="portrait" />
+52-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:54:13-49
+53        <activity
+53-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:55:9-57:52
+54            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.ManageGroupActivity"
+54-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:56:13-100
+55            android:screenOrientation="portrait" />
+55-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:57:13-49
+56        <activity
+56-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:58:9-61:73
+57            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.GroupApplyManagerActivity"
+57-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:59:13-106
+58            android:screenOrientation="portrait"
+58-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:60:13-49
+59            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+59-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:61:13-70
+60        <activity
+60-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:62:9-65:73
+61            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.GroupApplyDetailActivity"
+61-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:63:13-105
+62            android:screenOrientation="portrait"
+62-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:64:13-49
+63            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+63-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:65:13-70
+64        <activity
+64-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:66:9-69:73
+65            android:name="com.tencent.qcloud.tuikit.tuicontact.classicui.pages.NewFriendApplicationDetailActivity"
+65-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:67:13-115
+66            android:screenOrientation="portrait"
+66-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:68:13-49
+67            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+67-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:69:13-70
+68
+69        <!-- **************** Classic UI Activity End **************** -->
+70
+71
+72        <!-- **************** Minimalist UI Activity Start **************** -->
+73        <activity
+73-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:75:9-77:52
+74            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.NewFriendApplicationMinimalistActivity"
+74-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:76:13-122
+75            android:screenOrientation="portrait" />
+75-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:77:13-49
+76        <activity
+76-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:78:9-80:52
+77            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.NewFriendApplicationDetailMinimalistActivity"
+77-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:79:13-128
+78            android:screenOrientation="portrait" />
+78-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:80:13-49
+79        <activity
+79-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:81:9-83:52
+80            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.BlackListMinimalistActivity"
+80-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:82:13-111
+81            android:screenOrientation="portrait" />
+81-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:83:13-49
+82        <activity
+82-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:84:9-86:52
+83            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.GroupListMinimalistActivity"
+83-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:85:13-111
+84            android:screenOrientation="portrait" />
+84-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:86:13-49
+85        <activity
+85-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:88:9-91:73
+86            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.StartC2CChatMinimalistActivity"
+86-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:89:13-114
+87            android:screenOrientation="portrait"
+87-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:90:13-49
+88            android:theme="@style/ContactTransparentPopActivityStyle" />
+88-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:91:13-70
+89        <activity
+89-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:92:9-96:73
+90            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.StartGroupChatMinimalistActivity"
+90-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:93:13-116
+91            android:screenOrientation="portrait"
+91-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:94:13-49
+92            android:theme="@style/ContactTransparentPopActivityStyle"
+92-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:95:13-70
+93            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+93-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:96:13-70
+94        <activity
+94-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:98:9-101:52
+95            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.StartGroupMemberSelectMinimalistActivity"
+95-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:99:13-124
+96            android:launchMode="singleInstance"
+96-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:100:13-48
+97            android:screenOrientation="portrait" />
+97-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:101:13-49
+98        <activity
+98-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:103:9-106:73
+99            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.CreateGroupMinimalistActivity"
+99-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:104:13-113
+100            android:screenOrientation="portrait"
+100-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:105:13-49
+101            android:theme="@style/ContactTransparentPopActivityStyle" />
+101-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:106:13-70
+102        <activity
+102-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:108:9-111:73
+103            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.GroupTypeSelectMinimalistActivity"
+103-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:109:13-117
+104            android:screenOrientation="portrait"
+104-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:110:13-49
+105            android:theme="@style/ContactTransparentPopActivityStyle" />
+105-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:111:13-70
+106        <activity
+106-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:113:9-115:52
+107            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.GroupMemberMinimalistActivity"
+107-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:114:13-113
+108            android:screenOrientation="portrait" />
+108-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:115:13-49
+109        <activity
+109-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:116:9-118:52
+110            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.ManageGroupMinimalistActivity"
+110-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:117:13-113
+111            android:screenOrientation="portrait" />
+111-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:118:13-49
+112        <activity
+112-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:119:9-122:73
+113            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.GroupApplyManagerMinimalistActivity"
+113-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:120:13-119
+114            android:screenOrientation="portrait"
+114-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:121:13-49
+115            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+115-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:122:13-70
+116        <activity
+116-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:123:9-126:73
+117            android:name="com.tencent.qcloud.tuikit.tuicontact.minimalistui.pages.GroupApplyDetailMinimalistActivity"
+117-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:124:13-118
+118            android:screenOrientation="portrait"
+118-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:125:13-49
+119            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+119-->/Users/hu/Documents/AndroidWork/finalwork/TUIKit/TUIContact/tuicontact/src/main/AndroidManifest.xml:126:13-70
+120        <!-- **************** Minimalist UI Activity End **************** -->
+121
+122    </application>
+123
+124</manifest>

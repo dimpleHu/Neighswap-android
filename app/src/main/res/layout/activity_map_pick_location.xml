@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 新增 app 命名空间，用于 Toolbar 的 navigationIcon、title 等属性 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!-- 顶部 Toolbar（已添加返回功能，和 toolbar_my_published 风格一致） -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_map_pick"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_700"
+        app:title="选择位置"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="@drawable/ic_back" /> <!-- 返回图标（复用已有 ic_back 资源） -->
+
+    <!-- 原有搜索栏布局不变 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="搜索附近位置"
+            android:padding="10dp"
+            android:background="@drawable/shape_edittext"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:layout_marginStart="8dp"
+            android:background="@color/teal_700"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <!-- 原有地图、地址显示、列表、完成按钮布局均不变 -->
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:id="@+id/tv_selected_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前选中：定位中..."
+        android:textSize="14sp"
+        android:textColor="@color/grey"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lv_poi"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:dividerHeight="1dp"/>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:background="@color/purple"
+            android:textColor="@color/white"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
